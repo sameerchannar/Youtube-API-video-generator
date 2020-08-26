@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>randvidgen</title>
+  </head>
+  <body>
+    <p id="statement">Generating first youtube video</p>
+
+    <!--embed code taken from youtube --> 
+    <iframe id="myvideo" width="640" height="360" src="https://www.youtube.com/embed/Vpk6TasZMBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button onclick="myFunction()">Click me</button>
+    <script>
+      function myFunction() {
+        document.getElementById("myvideo").src = "https://www.youtube.com/embed/hFZFjoX2cGg";
+        
+        document.getElementById("statement").innerHTML = "got new video"
+      }
+    
+        
+    </script>
+    
+  </body>
+</html>
